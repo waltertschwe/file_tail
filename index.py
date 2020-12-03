@@ -1,8 +1,11 @@
 
+# TODO: make this a list and process each one 
+
 data_file = "data/ten_line_file.log"
 #data_file = "data/less_than_ten_line_file.log"
 #data_file = "data/bigfile_450_mb.log"
 #data_file = "data/bigfile_11_gb.log"
+
 with open(data_file) as read_file: 
     for line in (read_file.readlines() [-10:]):
         print(line)
