@@ -35,6 +35,7 @@ class HugeFileReader():
 
                 if read_byte == b"\n":
                     # decode the buffer_obj and add to our list
+                    print(buffer_obj.decode()[:-1])
                     list_of_lines.append(buffer_obj.decode()[::-1])
                     if len(list_of_lines) == self.NUM_LINES_FROM_END:
                         return list(reversed(list_of_lines))
